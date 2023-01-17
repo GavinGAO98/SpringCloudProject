@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gavin.cloud.dao.PaymentDao">
+    <insert id="addPayment" parameterType="com.gavin.cloud.entities.Payment" useGeneratedKeys="true" keyProperty="id">
+        <!--INSERT INTO Payment(id, serial_no) VALUES(#{payment})-->
+        INSERT INTO Payment(id, serial_no) VALUES(#{serial_no})
+    </insert>
+
+    <resultMap id="BaseResultMap" type="com.gavin.cloud.entities.Payment">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <id column="serialNo" property="serial_no" jdbcType="BIGINT"/>
+    </resultMap>
+    <select id="getPaymentById" resultMap="BaseResultMap"><!--为了避免表字段、entity实体字段驼峰命名、下划线命名等不同格式之间的错误映射resultType="com.gavin.cloud.entities.Payment"-->
+        SELECT id, serial_no FROM Payment WHERE id = #{id}
+    </select>
+</mapper>
