@@ -1,0 +1,18 @@
+
+#良好习惯，先写服务端口号
+server:
+  port: 8081
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource   # 数据源操作类型,不能填com.alibaba.druid.pool
+    driver-class-name: org.gjt.mm.mysql.Driver    # mysql驱动
+    url: jdbc:mysql://localhost:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.atguigu.springcloud.entities   # 所有Entity别名类所在包

@@ -10,7 +10,9 @@
     <packaging>pom</packaging> <!--★父工程必须是pom格式，这样才能保证父工程只有一个pom.xml配置文件-->
 
     <modules> <!--聚合子工程的顶级标签-->
-        <module>cloud-provider-payment</module>
+        <module>cloud-provider-payment8081</module>
+        <module>cloud-consumer-order80</module>
+        <module>cloud-api-commons</module>
     </modules>
 
 
