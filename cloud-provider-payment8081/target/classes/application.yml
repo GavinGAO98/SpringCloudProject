@@ -24,4 +24,6 @@ eureka:
     #是否从EurekaServer抓取已有的注册信息，默认为true。单节点无所谓，集群必须设置为true才能配合ribbon负载均衡
     fetchRegistry: true
     service-url:
-      defaultZone: http://localhost:7001/eureka/ # 最后一个/不能少
+      # 单节点注册中心 defaultZone: http://localhost:7001/eureka/ # 最后一个/不能少
+      #集群注册中心，所有的节点都要写
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/

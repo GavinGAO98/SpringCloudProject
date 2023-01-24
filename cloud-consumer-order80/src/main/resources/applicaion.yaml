@@ -3,11 +3,12 @@ server:
 
 spring:
   application:
-    name: cloud-order-service # Eureka服务注册时用到
+    name: cloud-order-service # Eureka服务注册时用到的服务名（即别名）
 
 eureka:
   client:
     register-with-eureka: true
     fetchRegistry: true
     service-url:
-      defaultZone: http://localhost:7001/eureka
+      # 单机版 defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka/, http://eureka7002.com:7002/eureka/

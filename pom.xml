@@ -14,6 +14,7 @@
         <module>cloud-consumer-order80</module>
         <module>cloud-api-commons</module>
         <module>cloud-eureka-server7001</module>
+        <module>cloud-eureka-server7002</module>
     </modules>
 
 
@@ -105,7 +106,8 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <fork>true</fork>
+                    <fork>true</fork> <!--与dev-tools相关-->
+                    <skip>true</skip>
                     <addResources>true</addResources>
                 </configuration>
             </plugin>
