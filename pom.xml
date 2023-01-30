@@ -10,11 +10,16 @@
     <packaging>pom</packaging> <!--★父工程必须是pom格式，这样才能保证父工程只有一个pom.xml配置文件-->
 
     <modules> <!--聚合子工程的顶级标签-->
-        <module>cloud-provider-payment8081</module>
-        <module>cloud-consumer-order80</module>
+        <module>cloud-provider-eureka-payment8081</module>
+        <module>cloud-provider-eureka-payment8002</module>
+        <module>cloud-consumer-eureka-order80</module>
         <module>cloud-api-commons</module>
         <module>cloud-eureka-server7001</module>
         <module>cloud-eureka-server7002</module>
+        <module>cloud-provider-zookeeper-payment8010</module>
+        <module>cloud-consumer-zookeeper-order80</module>
+
+
     </modules>
 
 
@@ -37,7 +42,7 @@
             <!--spring boot 2.2.2-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
+                <artifactId>spring-boot-dependencies</artifactId> <!--其父工程默认提供了很多的版本号 https://blog.csdn.net/weixin_45187434/article/details/128395040-->
                 <version>2.2.2.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -107,7 +112,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork> <!--与dev-tools相关-->
-                    <skip>true</skip>
+                    <!--<skip>true</skip>-->
                     <addResources>true</addResources>
                 </configuration>
             </plugin>

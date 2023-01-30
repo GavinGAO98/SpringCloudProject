@@ -1,0 +1,33 @@
+
+#良好习惯，先写服务端口号
+server:
+  port: 8081
+
+spring:
+  application:
+    name: cloud-payment-service # Q：配置数据与哪里有关？
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource   # 数据源操作类型,不能填com.alibaba.druid.pool
+    driver-class-name: org.gjt.mm.mysql.Driver    # mysql驱动
+    url: jdbc:mysql://localhost:3306/cloudmicro?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+mybatis:
+  # 键是驼峰形式有影响吗？
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.gavin.cloud.entities   # 所有Entity别名类所在包
+
+#配置入驻Eureka
+eureka:
+  instance:
+    instance-id: payment8081 # 代替eureka server中注册的主机名:项目名：端口号格式
+    prefer-ip-address: true # 访问路径显示IP地址
+  client:
+    register-with-eureka: true
+    #是否从EurekaServer抓取已有的注册信息，默认为true。单节点无所谓，集群必须设置为true才能配合ribbon负载均衡
+    fetchRegistry: true
+    service-url:
+      # 单节点注册中心 defaultZone: http://localhost:7001/eureka/ # 最后一个/不能少
+      #集群注册中心，所有的节点都要写
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/

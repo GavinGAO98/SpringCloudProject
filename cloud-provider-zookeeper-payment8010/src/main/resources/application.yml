@@ -1,0 +1,9 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: cloud-provider-payment # 服务别名不变
+  cloud:
+    zookeeper:
+      connect-string: 192.168.111.144 # Vmware虚拟机的IP地址

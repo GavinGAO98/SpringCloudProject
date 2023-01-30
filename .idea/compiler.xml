@@ -7,16 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud-consumer-order80" />
+        <module name="cloud-consumer-zookeeper-order80" />
         <module name="cloud-eureka-server7001" />
+        <module name="cloud-provider-zookeeper-payment8010" />
         <module name="cloud-api-commons" />
-        <module name="cloud-provider-payment8081" />
         <module name="cloud-eureka-server7002" />
+        <module name="cloud-provider-eureka-payment8002" />
+        <module name="cloud-consumer-eureka-order80" />
+        <module name="cloud-provider-eureka-payment8081" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-consumer-order" target="11" />
       <module name="cloud-provider-order" target="11" />
+      <module name="cloud-provider-payment8002" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
