@@ -77,5 +77,11 @@ public class PaymentController {
         }
         return discoveryClient;
     }
+
+    //通过端口号判断负载均衡调用的是哪个？
+    @GetMapping("/payment/lb")
+    public String getPaymentLB(){
+        return serverPort;
+    }
 }
 
