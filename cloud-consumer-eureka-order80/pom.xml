@@ -22,7 +22,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>4.0.0</version>
+<!--            <version>4.0.0</version>--> <!--指定4.0.0版本时依赖于2.2.1Ribbon，不指定依赖于2.3.0版本Ribbon，2.3.0版本才有IRule等接口-->
         </dependency>
 
         <!--引入自定义的api通用包，包括Entity支付Payment-->

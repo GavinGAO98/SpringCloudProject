@@ -2,13 +2,20 @@ package com.gavin.cloud.controller;
 
 import com.gavin.cloud.entities.CommonResult;
 import com.gavin.cloud.entities.Payment;
+import com.gavin.cloud.myLoadBalanceStrategy.LoadBalancer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+
+import javax.annotation.Resource;
+import java.net.URI;
+import java.util.List;
 
 /**
  * 订单微服务只需要controller层，不用写入数据库？
@@ -27,6 +34,11 @@ public class OrderController {
     //使用Spring提供的restTemplate访问restful接口
     @Autowired
     private RestTemplate restTemplate;
+
+    @Resource
+    private LoadBalancer loadBalancer; //使用的是自己包中的lb接口
+
+    private DiscoveryClient discoveryClient;
 
     //Q:为什么是GET方法？
     @GetMapping("/consumer/payment/create")
@@ -55,5 +67,16 @@ public class OrderController {
         }else{
             return new CommonResult<>(444, "操作失败");
         }
+    }
+
+    @GetMapping("/consumer/payment/lb")
+    public String getUsedPaymentLB(){
+        List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE"); //通过discoveryClient提供的方法获取实例列表
+        if(instances == null || instances.size() <= 0)
+            return null;
+
+        ServiceInstance serviceInstance = loadBalancer.getBalancedInstance(instances);
+        URI uri = serviceInstance.getUri();
+        return restTemplate.getForObject(uri + "/payment/lb", String.class);
     }
 }
