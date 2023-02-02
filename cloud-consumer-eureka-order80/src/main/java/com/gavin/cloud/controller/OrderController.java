@@ -38,6 +38,7 @@ public class OrderController {
     @Resource
     private LoadBalancer loadBalancer; //使用的是自己包中的lb接口
 
+    @Resource
     private DiscoveryClient discoveryClient;
 
     //Q:为什么是GET方法？
