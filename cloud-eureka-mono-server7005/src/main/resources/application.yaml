@@ -1,0 +1,17 @@
+server:
+  port: 7005
+
+eureka:
+  instance:
+    # 单机版：hostname: localhost
+    hostname: eureka7005.com
+  server:
+    enable-self-preservation: true
+    eviction-interval-timer-in-ms: 2000
+  client:
+    register-with-eureka: false # false表示不向注册中心注册server服务
+    #false表示server端就是注册中心，职责是维护服务实例，无需检索服务
+    fetch-registry: false
+    service-url:
+      #设置与Eureka Server交互的地址查询服务和注册服务都依赖如下地址
+      单机版 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

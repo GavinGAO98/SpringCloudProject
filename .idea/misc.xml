@@ -7,6 +7,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/cloud-consumer-eureka-order80/src/main/java/com/gavin/cloud/cloud-consumer-feign-order80/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="PDMPlugin">
     <option name="skipTestSources" value="false" />

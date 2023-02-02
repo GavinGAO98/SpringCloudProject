@@ -17,8 +17,6 @@ Zcloud-provider-consul-payment8006/src/main/java/com/gavin/cloud/PaymentConsulMa
 dcloud-provider-zookeeper-payment8010/src/main/java/com/gavin/cloud/controller/PaymentController.java,e\6\e6902469ce03025fb3d03a8e0ac67cc36525aaa3
 U
 %cloud-consumer-consul-order80/pom.xml,b\a\ba0d3b3441a2be683f90463bbda0336419c0354f
-?
-pomTemplate.xml,1\0\10fb92be121f10eb02bb9f5c574d7a251e64ca76
 Ç
 Rcloud-consumer-consul-order80/src/main/java/com/gavin/cloud/OrderConsulMain80.java,b\5\b5a966a098e779064ae0e17e667c5da4ab64928e
 ç
@@ -28,11 +26,7 @@ Rcloud-consumer-consul-order80/src/main/java/com/gavin/cloud/OrderConsulMain80.j
 ë
 acloud-provider-consul-payment8006/src/main/java/com/gavin/cloud/controller/PaymentController.java,e\5\e5d32d3ac955343bcce4a4069e3c836a1f84b5c0
 Ñ
-Tcloud-provider-eureka-payment8002/src/main/java/com/gavin/cloud/PaymentMain8002.java,0\8\08bc1d583b28b51cc079e7ee2a4f48271776e191
-Ñ
 Tcloud-provider-eureka-payment8081/src/main/java/com/gavin/cloud/PaymentMain8081.java,e\d\ed7b4975445c780c77b2ae0f5bc7c9349fe34256
-y
-Icloud-eureka-server7001/src/main/java/com/gavin/cloud/EurekaMain7001.java,c\a\cac45c0bde385258843facc2fe7584315342de82
 U
 %cloud-consumer-eureka-order80/pom.xml,8\2\8226d3f8d0fd4db5d134f8d2ced0267de8372d09
 Ü
@@ -47,3 +41,11 @@ Jcloud-consumer-eureka-order80/src/main/java/com/gavin/cloud/OrderMain.java,f\9
 acloud-provider-eureka-payment8081/src/main/java/com/gavin/cloud/controller/PaymentController.java,d\a\da3ca10583d9a3fdb9f87dea522854cbe3ccf8e8
 ë
 acloud-provider-eureka-payment8002/src/main/java/com/gavin/cloud/controller/PaymentController.java,1\0\10f4b5fb7251b63195e4859a40d8128188e45fe1
+w
+G.idea/sonarlint/issuestore/0/8/08bc1d583b28b51cc079e7ee2a4f48271776e191,a\7\a71e4cfbdd0b4358fd8043c4a1613a28bbd1fa48
+w
+G.idea/sonarlint/issuestore/8/2/8226d3f8d0fd4db5d134f8d2ced0267de8372d09,a\b\abc5836ac1385ffac128ceba54d0959726e21cb3
+w
+G.idea/sonarlint/issuestore/e/d/ed7b4975445c780c77b2ae0f5bc7c9349fe34256,5\a\5a22aa177c12ec29b8ef1bf55f555f46021d39ad
+w
+G.idea/sonarlint/issuestore/f/9/f9ebe62b37339e1772b522af960f347891d645e3,4\6\461f3e7c0ca1590e8dc16f6ebf4bc95cc0b942b7
