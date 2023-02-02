@@ -1,0 +1,7 @@
+如果该分支没有合并到其他分支（包括主分支），则本地工作目录（即文件夹）看不到该diff.txt文件。
+
+此外，如果在当前分支下没有提交到暂存区，就切换至另一个分支，则该文件将被覆盖。错误提示如下：
+error: Your local changes to the following files would be overwritten by checkout:
+        diff.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
