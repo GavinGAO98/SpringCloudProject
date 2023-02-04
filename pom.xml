@@ -13,6 +13,7 @@
         <module>cloud-provider-eureka-payment8081</module>
         <module>cloud-provider-eureka-payment8002</module>
         <module>cloud-consumer-eureka-order80</module>
+        <module>cloud-consumer-hystrix-order80</module>
         <module>cloud-api-commons</module>
         <module>cloud-eureka-server7001</module>
         <module>cloud-eureka-server7002</module>
@@ -23,6 +24,7 @@
         <module>cloud-consumer-feign-order80</module>
         <module>cloud-eureka-mono-server7005</module>
         <module>cloud-provider-hystrix-payment8005</module>
+        <module>cloud-api-commons</module>
 
 
     </modules>
