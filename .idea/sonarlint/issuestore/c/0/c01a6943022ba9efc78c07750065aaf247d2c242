@@ -1,0 +1,12 @@
+
+Z	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.(ö½æ 
+l
+java:S1192"VDefine a constant instead of duplicating this literal " paymentInfo_OK, id: " 3 times.(ËÁ®â
+b
+java:S1192"LDefine a constant instead of duplicating this literal "çº¿ç¨‹æ± : " 3 times.(ËÁ®â
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô§å¾
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÜ€ù
+t
+java:S2142""^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+Q	java:S125"<This block of commented-out lines of code should be removed.(¶ù—™
+c	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÎÖş

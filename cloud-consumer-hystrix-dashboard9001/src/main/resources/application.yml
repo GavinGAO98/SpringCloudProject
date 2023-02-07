@@ -1,0 +1,4 @@
+server:
+  port: 9001 # 浏览器键入localhost:9001/hystrix查看可视化监控结果，被监控的服务必须要添加actuator依赖
+
+# 监控的流，如http://localhost:8005/hystrix.stream

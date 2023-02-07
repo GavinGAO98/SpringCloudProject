@@ -1,0 +1,24 @@
+
+t
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(åÌ¼ý
+s
+java:S1488!"^Immediately return this expression instead of assigning it to the temporary variable "result".(ÅäÃ
+s
+java:S1488-"^Immediately return this expression instead of assigning it to the temporary variable "result".(ÅäÃ
+^
+java:S3518,"CMake sure this expression can't be zero before doing this division.(ÚÈŸ‡ÿÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½áÛž
+h	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”¾Ñ¤ûÿÿÿÿ
+T
+java:S3400&"9Remove this method and declare a constant for this value.(Š™ÇÃýÿÿÿÿ
+?
+java:S1172%")Remove this unused method parameter "id".(Ìàõ°
+h	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÛ›”üÿÿÿÿ
+P
+java:S1854,"5Remove this useless assignment to local variable "i".(ÚÈŸ‡ÿÿÿÿÿ
+A
+java:S1481,"&Remove this unused "i" local variable.(ÚÈŸ‡ÿÿÿÿÿ
+T
+java:S34009"9Remove this method and declare a constant for this value.(«×÷×þÿÿÿÿ
+?
+java:S11728")Remove this unused method parameter "id".(À«‰¸
