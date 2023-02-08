@@ -1,0 +1,23 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: cloud-config-center # 注册到Eureka 服务器的微服务名称
+  # 配置外部的配置中心
+  cloud:
+    config:
+      server:
+        git:
+          # 使用ssh会报错误org.eclipse.jgit.api.errors.TransportException: git@github.com:xxxxxxxx.git: Auth fail
+          uri: git@github.com:GavinGAO98/springcloud-config.git
+          # 搜索目录
+          search-paths:
+            - springcloud-config
+        # 读取分支
+        label: main
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7005/eureka

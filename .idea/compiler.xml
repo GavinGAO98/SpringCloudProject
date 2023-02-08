@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-consumer-zookeeper-order80" />
         <module name="cloud-provider-hystrix-payment8005" />
+        <module name="cloud-config-center3344" />
         <module name="cloud-eureka-server7001" />
         <module name="cloud-api-commons" />
         <module name="cloud-eureka-server7002" />
@@ -17,6 +18,7 @@
         <module name="cloud-consumer-feign-hystrix-order80" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
         <module name="cloud-gateway9527" />
+        <module name="cloud-config-bus-client3355" />
         <module name="cloud-provider-zookeeper-payment8010" />
         <module name="cloud-consumer-eureka-order80" />
         <module name="cloud-eureka-mono-server7005" />
@@ -26,6 +28,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud-config-client3355" target="11" />
       <module name="cloud-consumer-order" target="11" />
       <module name="cloud-provider-order" target="11" />
       <module name="cloud-provider-payment8002" target="11" />
