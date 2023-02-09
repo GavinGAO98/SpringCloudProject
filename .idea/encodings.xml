@@ -37,8 +37,12 @@
     <file url="file://$PROJECT_DIR$/cloud-provider-eureka-payment8081/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-hystrix-payment8005/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-hystrix-payment8005/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider-stream-rabbitmq8801/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider-stream-rabbitmq8801/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-zookeeper-payment8010/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-zookeeper-payment8010/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

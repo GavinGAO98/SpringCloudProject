@@ -135,17 +135,5 @@ acloud-provider-eureka-payment8081/src/main/java/com/gavin/cloud/controller/Paym
 [cloud-provider-eureka-payment8081/src/main/java/com/gavin/cloud/service/PaymentService.java,b\e\be01d8ec69e84a9b973eed00cf13aeb22e94a5a0
 y
 Icloud-gateway9527/src/main/java/com/gavin/cloud/config/GatewayConfig.java,f\9\f9afff23f7956680eb4a835e4c8c29604bdb362e
-
-Ocloud-config-center3344/src/main/java/com/gavin/cloud/ConfigServerMain3344.java,e\2\e2ee3f750fbb3545fc0676ad7660543b10a01953
-?
-pomTemplate.xml,1\0\10fb92be121f10eb02bb9f5c574d7a251e64ca76
 S
 #cloud-config-bus-center3344/pom.xml,5\c\5ce317eebbcca721a3ba9b6ebf82a3714d80cdcc
-S
-#cloud-config-bus-client3355/pom.xml,c\0\c0c38b2ab4abff5aec0c70e01b88ca463e1d1e38
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-É
-Scloud-config-bus-client3355/src/main/java/com/gavin/cloud/ConfigClientMain3355.java,d\8\d89c6923e3ab7ff3a011cba750c3a8721de05046
-ê
-`cloud-config-bus-client3355/src/main/java/com/gavin/cloud/controller/ConfigClientController.java,1\6\16b049df678c578772b8016c56e1e9938ff1387a
